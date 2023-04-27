@@ -1,0 +1,211 @@
+Example,Line,Coder 1,Coder 2,Notes
+115,1,,,
+115,3,,,
+115,4,C9.a.,C9.a.,
+115,5,,,
+115,6,,,
+115,8,,,
+115,10,C1.a.iii.,C1.a.iii. C3.b.,
+115,11,,C1.a.iii.,Coder 1 missed
+115,12,,,
+115,14,C1.a.iii.,C1.a.iii.,
+115,17,C1.a.ii.,C1.a.ii.,
+115,18,,,
+115,20,C1.a.iii.,C1.a.iii.,
+115,21,C1.a.ii.,C1.a.ii.,
+115,24,C1.a.ii.,C1.a.ii.,
+115,25,,,
+124,1,C4.a.iii.,C4.a.ii.,C4.a.ii. ambiguous
+124,3,C1.a.i. C8. C3.a.,C1.a.i. C8. C3.a. C6.,Coder 3 incorrect on C6. -> not a literal in source
+124,4,,,
+124,5,,,
+124,6,,,
+124,7,C12.a.,C12.a.,
+142,1,,,
+142,3,C5.b.,C5.b.,
+142,5,C1.a.i.,C1.a.i.,Ignoring C3.a. based on implicit codes principle
+142,6,,,
+142,7,,,
+142,8,,,
+142,10,C1.a.i.,C1.a.i.,Ignoring C3.a. based on implicit codes principle
+142,11,,,
+142,12,C12.a.,C12.a.,
+134,1,,,
+134,3,,,
+134,4,,,
+134,5,,,
+134,6,,,
+134,7,,,
+121,1,,,
+121,3,C7.c.,C3.b. C4.b.,Ambiguous on C3.a. and C4.b.
+116,1,,,
+116,3,C5.a.,C5.a.,
+116,4,C8. C13.,C13.,Coder 3 is correct here - there’s not issue representing the first instance of E
+116,5,C8. C13.,C8. C13.,
+116,6,C8. C13.,C8. C13.,
+116,7,C8. C13.,C8. C13.,C2.a.i. Ignored due to implicit codes principle
+116,8,,C3.a.,Coder 1 missed
+116,9,,,
+116,11,C12.a.,C12.a.,
+196,1,,,
+196,3,,,
+125,1,,,
+125,3,,,
+125,4,C1.b.i.,C1.b.i.,
+125,6,,,
+125,7,C3.a.,C3.a.,
+125,8,C12.a.,C12.a.,
+178,1,,,
+178,3,C5.a.,C5.a.,
+178,4,C1.a.i. C9.b.,C1.a.i. C9.b.,C3.a. ignored due to implicit codes principle
+178,5,C2.a.i.,C2.a.i.,
+178,6,C1.a.i. C9.b.,C1.a.i. C9.b.,C3.a. ignored due to implicit codes principle
+178,7,C12.a.,C12.a.,
+151,1,,,
+151,3,C5.a.,C5.a.,
+151,4,,,
+151,6,,C4.,All C4 codes in this function arise from a lack of type information
+151,7,,C4.,
+151,9,,,
+151,11,,C4.,
+151,15,,C4.,
+151,16,,C4.,
+151,18,,,
+151,20,,C4.,
+151,23,,,
+151,24,,C4.,
+151,26,,,
+151,28,,C4.,
+151,29,,C4.,
+151,31,,,
+151,33,C2.a.i.,C2.a.i.,
+151,34,,,
+151,35,C12.a.,C12.a.,
+112,1,,,
+112,3,C4.,C8.,Coder 3 code is incorrect; stdout is not a global variable so C8 cannot apply.
+112,4,,,
+194,1,,,
+194,3,C5.a.,C5.a.,
+194,4,C5.a.i.,C5.a.,Coder 3’s code is not specific enough; meets the definition of C5.a.i.
+194,5,C5.a.i.,C5.a.,
+194,6,C2.a.i.,C2.a.i.,
+194,7,C2.a.i.,C2.a.i.,
+194,8,,,
+194,9,,,
+194,11,,,
+194,13,,,
+128,1,,,
+128,3,C3.a. C9.b. C4.b.,C3.a. C4.b. C9.b.,
+128,4,,,
+128,6,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,7,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,9,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,11,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,12,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,13,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+128,14,C9.b.,C9.b.,
+128,15,,,
+198,1,C5.a.,C5.a.,
+198,3,C5.a.,C5.a.,
+198,4,C3.a. C4.a.ii. C4.,C3.a. C4.a.ii.,
+198,5,,,
+198,6,,,
+198,8,C7.d. C9.a.,C7.d. C9.b.,"Coder 3 states that errno and strerror are user-defined, which is not true."
+198,10,C9.a.,C2.a.i.,Corrected from C2.a. based on text provided by .
+198,11,,C2.a.i.,Corrected from C2.a. based on text provided by Coder 3.
+198,15,,C2.a.i.,Corrected from C2.a. based on text provided by Coder 3.
+198,18,,,
+198,19,,,
+105,1,,,
+105,3,,,
+105,6,C6.d.,C6.d.,
+105,7,C4.a.ii.,C4.a.ii. C4.b.,Coder 3 assumes that __isoc99_scanf() calls scanf(); this is actually equivalent under C99 standards (if C4.a.ii. is addressed).
+105,9,,,
+105,10,,,
+150,1,,,
+,,,C5.b.,Line 2 used for comment on missing variable. Coder 3 is correct here.
+150,3,,,
+150,4,C5.a.i.,C5.a.i.,
+150,5,,,
+150,6,C2.a.i.,,Coder 3 missed C2.a.i.
+150,7,,,
+150,8,C3.a.,C3.a.,
+150,9,,,
+150,10,C1.a.i.,C1.a.i.,
+150,12,C12.a.,C12.a.,
+160,1,C4.a.iii.,C4.a.ii.,C4.a.ii. ambiguous
+160,3,C12.a. C9.b.,C12.a. C9.b.,
+126,1,,,
+126,3,,,
+126,4,C5.a.,C5.a.,
+126,5,C2.a.i.,C2.a.,Does qualify for sub-categorization under C2.a.i.
+126,6,,,
+126,,,C2.b.,Does not qualify for missing code; explicitly listed as benign difference.
+126,7,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+126,8,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+126,9,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+126,11,C1.a.i. C1.a.ii.,C1.a.i. C1.a.ii.,
+126,13,C1.a.iii.,C1.a.iii.,
+126,14,C1.a.i. C11.,C1.a.i. ,
+126,15,,,
+126,16,C9.a. C3.a.,C9.a. C3.a.,
+126,17,,,
+126,19,C12.a.,C12.a.,C2.a. ignored due to implicit codes principle
+138,1,,,
+138,,C2.b.,C2.b. C9.a.,Coded a C9.a. on a missing statement
+138,3,C5.a.,C5.a.,
+138,4,C9.b.,C9.b.,
+138,5,C9.b.,C9.b. C6.c.,
+138,,C2.b.,C2.b.,
+138,7,C6.c.,C6.c.,
+138,9,,,
+107,1,,,
+107,3,,,
+107,4,C5.a.i.,C5.a.i.,
+107,5,C9.a.,C9.a.,
+107,6,C2.a.i.,C2.a.i.,
+107,7,C1.a.ii.,C1.a.ii.,
+107,8,C1.a.ii.,C1.a.ii.,
+107,9,C1.a.ii.,C1.a.ii.,
+107,10,C3.a.,C3.a.,
+107,11,,,
+159,1,,,
+159,3,,,
+159,4,C5.a.,,
+159,5,C5.a.,,
+159,6,C9.b.,C9.b.,
+159,,,C2.b.,Benign difference
+159,,,C2.b.,Does not qualify for missing code; explicitly listed as benign difference.
+159,7,C1.b. C9.b.,C3.a. C3.b. C1.b.ii. C9.b. C4.,Coder 3 is correct that C1.b. should be C1.b.ii.
+159,8,,,
+159,9,,,
+159,11,,,
+159,12,C3.a.,C3.a.,
+159,14,,,
+159,15,,,C2.a.i. Ignored due to implicit codes principle
+159,16,,,
+159,21,C12.a.,C12.a.,
+193,1,,,
+193,3,,,
+193,4,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+193,6,C1.a.i.,C1.a.i.,C3.a. ignored due to implicit codes principle
+193,8,C9.b.,C9.b.,
+190,1,,,
+190,3,,,
+190,4,,,
+190,6,C9.a.,C9.a.,
+190,7,,,
+190,9,C3.a.,C3.a.,
+190,10,,,
+129,1,,,
+129,3,,,
+129,4,,C2.a.i.,C2.a.i. coded despite no extraneous variables coded
+129,5,C1.a.i. C1.b.ii.,C1.a.i. C1.b.ii. C3.b.,C3.a. ignored due to implicit codes principle
+129,6,C12.a.,C12.a.,
+131,1,C4.a.i.,C4.a.i.,
+131,3,C4.a.i.,C4.a.i.,
+131,4,,,
+131,5,,,
+131,6,,,
+131,7,,C4.,
+131,8,,C12.,Does not include a C12 subclass; states the original code has incorrect behavior.
