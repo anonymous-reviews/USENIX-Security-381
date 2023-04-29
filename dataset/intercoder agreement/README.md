@@ -2,7 +2,7 @@
 
 Intercoder agreement is used to determine the validity of an open coding scheme across multiple individual coders.
 
-Most techniques for grading intercoder agreement assume there a fixed number of entities which are labeled. Here, these entities are lines of source code. Each line can have one or more different labels. It is possible for there to be multiple of the same issue on the same line. In these cases, for simplicity, we treat the line as if it has one instance of that code.
+Most techniques for grading intercoder agreement assume there a fixed number of entities which are labeled. Here, these entities are lines of source code. Each line can have one or more different labels. It is possible for there to be multiple of the same issue on the same line. In these cases, for simplicity, we treat the line as if it has one instance of that code. We ignore "trivial" lines - those that are simply whitespace or brackets - because doing so would artificially inflate intercoder agreement scores.
 
 Intercoder agreement was evaluated in two rounds. The feedback from the first round was used to improve the codebook from the next round. As a result, the codes for the first round (with Coder 2) use an old version of the codebook. The first round compared Coder 1's codes with Coder 2's codes. Before the second round coder 1's codes were updated to use the new codebook. Then the second round compared Coder 1's codes with Coder 3's codes.
 
