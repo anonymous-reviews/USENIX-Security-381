@@ -29,6 +29,11 @@ then run
 python return_heuristic.py sample
 ```
 
+On the full dataset, the heuristic worked around 76.08% of the time.<br>
+Heuristic successes: 5883775<br>
+Heuristic failures: 1850265<br>
+Undefined behavior (void functions' return values used): 58734
+
 
 #### Inlining heuristic
 The inlining heuristic states that if a non-parameter local variable is defined then used once, inline the definition at the use site and remove that variable.
@@ -36,3 +41,11 @@ The inlining heuristic uses the [`DIRE` dataset](https://zenodo.org/record/34030
 ```
 python inlining_heuristic.py /path/to/DIRE-dataset
 ```
+
+On the full DIRE dataset, the heuristic worked 85.90% of the time.<br>
+Heuristic Successes: 2177774<br>
+Heuristic Failures: 357535<br>
+Global Variable/Dataset Generation Error: 57670<br>
+Functions failed to parse: 257961
+
+Included in the "Dataset Generation Error" category are functions recognized by Hex-Rays' [`F.L.I.R.T.`](https://hex-rays.com/products/ida/tech/flirt/in_depth/) library recognition system, which identifies common library functions and, among other things, substitutes the names present in the original code. This undermines the basic assumptions used in the heuristic.
