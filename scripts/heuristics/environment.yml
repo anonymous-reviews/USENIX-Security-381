@@ -1,0 +1,6 @@
+name: codebook_heuristics
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - tree_sitter
